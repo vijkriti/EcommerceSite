@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.filters-container {
+  width: 20%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  margin-top: 0;
+}
+
+.filter-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-section li {
+  margin-bottom: 10px;
+}
+
+.filter-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-section input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.filter-section button[mat-raised-button] {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.products-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  margin: 20px;
+  width: 20px;
+  background-color: transparent;
+}
+
+mat-card {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+mat-card img[mat-card-image] {
+  height: 100%;
+  width: 40%; 
+  object-fit: cover; 
+  border-radius: 10px 0 0 10px; 
+  float: left;
+  margin: 10px; 
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+mat-card-content h2 {
+  margin-top: 0;
+}
+
+mat-card-content p {
+  margin-bottom: 10px;
+}
+
+mat-card button[mat-raised-button] {
+  width: 100%;
+  margin-top: 20px;
+}
+
+button{
+  width: 100%;
+  margin-top: 20px;
+}

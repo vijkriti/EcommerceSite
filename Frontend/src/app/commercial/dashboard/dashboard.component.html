@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="filters-container">
+
+    
+    <div class="filter-section">
+      <h4>Categories</h4>
+      <ul>
+        <li *ngFor="let category of categories">
+          <label>
+            <input type="checkbox" [value]="category.categoryId" (change)="onCheckboxChange($event)" > {{ category.category_name}}</label>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="filter-section">
+      <h4>Brands</h4>
+      <ul>
+        <li *ngFor="let brand of brands">
+          <label>
+            <input type="checkbox" [value]="brand.brandId" (change)="onCheckChange($event)"> {{ brand.brand_name }}
+          </label>
+          
+        </li>
+      </ul>
+      <button mat-raised-button (click)="filter()">Apply</button>
+        <button mat-button (click)="logout()">Logout</button>
+      </div>
+  </div>
+
+ 
+ 
+<div>
+  <mat-card *ngFor="let product of filteredProducts">
+    <img mat-card-image [src]="product.imgpath" alt="{{product.name}}">
+    <mat-card-content>
+      <h2>{{product.name}}</h2>
+      <p>{{product.Description}}</p>
+      <p>Price: {{product.price}}</p>
+      <p>Quantity: {{product.quantity}}</p>
+    </mat-card-content>
+    <button mat-raised-button (click)="navigateTo(product)">Add to Cart</button>
+  </mat-card>
+</div>

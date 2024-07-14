@@ -1,0 +1,25 @@
+<div class="product-details-container">
+  <div *ngFor="let product of getProductDetails" class="product-item">
+    <h1>{{ product.name }}</h1>
+    <div class="product-info">
+      <div class="product-image">
+        <img [src]="product.imgpath" alt="{{ product.name }}">
+      </div>
+      <p>{{ product.description }}</p>
+      <p>Price: {{ product.price }}</p>
+      <mat-form-field>
+        <mat-label>Quantity</mat-label>
+        <input matInput type="number" [(ngModel)]="defaultQuantity" (change)="onQuantityChange($event, product)" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Enter Username</mat-label>
+        <input matInput type="text" [(ngModel)]="enteredUsername" />
+      </mat-form-field>
+      <p>Total Amount: {{ totalAmount }}</p>
+      <button mat-button (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+  <div>
+    <button mat-button (click)="logout()">Logout</button>
+  </div>
+</div>

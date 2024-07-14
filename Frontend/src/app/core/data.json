@@ -1,0 +1,32 @@
+{
+  "products": [
+    {"id": 1, "name": "Samsung M32", "categoryId": 1, "brandId": 1, "price": 100, "quantity": 100, "imgpath": "Prod3.jpg", "Description": "Description 1"},
+    {"id": 2, "name": "iPhone 16", "categoryId": 2, "brandId": 2, "price": 200, "quantity": 200, "imgpath": "Prod2.jpg", "Description": "Description 2"},
+    {"id": 3, "name": "Saree", "categoryId": 3, "brandId": 3, "price": 300, "quantity": 300, "imgpath": "Prod7.jpg", "Description": "Description 3"},
+    {"id": 4, "name": "Pride and Prejudice", "categoryId": 4, "brandId": 1, "price": 400, "quantity": 100, "imgpath": "Prod8.jpg", "Description": "Description 4"},
+    {"id": 5, "name": "Press", "categoryId": 5, "brandId": 2, "price": 500, "quantity": 100, "imgpath": "Prod9.jpg", "Description": "Description 5"},
+    {"id": 6, "name": "Earphones", "categoryId": 2, "brandId": 3, "price": 600, "quantity": 200, "imgpath": "Prod2.jpg", "Description": "Description 6"},
+    {"id": 7, "name": "Blush and makeup", "categoryId": 3, "brandId": 1, "price": 700, "quantity": 300, "imgpath": "Prod6.jpg", "Description": "Description 7"},
+    {"id": 8, "name": "Power of unconcious mind","categoryId": 4, "brandId": 2, "price": 800, "quantity": 100, "imgpath": "Prod1.jpg", "Description": "Description 8"},
+    {"id": 9, "name": "Samsung Tablet", "categoryId": 1, "brandId": 3, "price": 900, "quantity": 100, "imgpath": "Prod4.jpg", "Description": "Description 9"},
+    {"id": 10, "name": "iPad", "categoryId": 5, "brandId": 1, "price": 1000, "quantity": 100, "imgpath": "Prod10.jpg", "Description": "Description 10"}
+  ],
+  "categories": [
+    {"categoryId": 1, "category_name": "Electronics"},
+    {"categoryId": 2, "category_name": "Clothes"},
+    {"categoryId": 3, "category_name": "Books"},
+    {"categoryId": 4, "category_name": "Cosmetics"},
+    {"categoryId": 5, "category_name": "Home Appliances"}
+  ],
+  "brands": [
+    {"brandId": 1, "brand_name": "Samsung"},
+    {"brandId": 2, "brand_name": "Apple"},
+    {"brandId": 3, "brand_name": "Realme"}
+  ],
+  "login_credentials": [
+    {"email": "user1@gmail.com", "password": "abc@123"},
+    {"email": "user2@gmail.com", "password": "def@456"},
+    {"email": "user3@gmail.com", "password": "ghi@789"}
+  ],
+  "ProductOrder": []
+}
